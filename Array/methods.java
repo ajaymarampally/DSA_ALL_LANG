@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.*;
 public class methods {
     public static int  minmum(int a , int b){
@@ -29,6 +28,22 @@ public class methods {
         IntSummaryStatistics stat = Arrays.stream(arr).summaryStatistics();
         int max = stat.getMax();
         return max;
+    }
+     static int[] swap(int data[], int left, int right) 
+    { 
+  
+        // Swap the data 
+        int temp = data[left]; 
+        data[left] = data[right]; 
+        data[right] = temp; 
+  
+        // Return the updated array 
+        return data; 
+    } 
+
+    static void reverse_arr(int arr[],int i,int j){
+        while(i<j)
+            swap(arr,i++,j--);
     }
 }
         
