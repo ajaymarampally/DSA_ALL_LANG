@@ -17,7 +17,9 @@ algo: naive -> 1.sort the arr (nlogn)
                     1.check if elem-1 exists if exists cont
                     2.else-> check elem+1 exists in the set , increase the counter
                     3.return the counter (ans)
-
+            time : o(n) -> for inserting into hash
+                    0(n) - > for the loop 
+                    o(n) = > for checking the condition of the next elem 
 */
 
 
