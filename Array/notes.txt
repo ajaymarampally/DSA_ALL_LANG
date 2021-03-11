@@ -1,0 +1,1 @@
+1.learn the quick sort algo in java , c++
