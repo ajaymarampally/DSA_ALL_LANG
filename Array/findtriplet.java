@@ -1,3 +1,5 @@
+import java.util.*;
+
 /*
 given a value , find the three elem in the arr which sum up to the given value 
 
@@ -16,4 +18,37 @@ algo:
 */
 class findtriplet {
     
-}
+    static int[] findtriplet_func(int arr[],int sum){
+
+        Arrays.sort(arr);
+        int ans[] = new int[3];
+
+        for(int c=0;c<arr.length-2;c++){
+
+            int l=c+1;
+            int r=arr.length-1;
+                while(l<r){
+                    if(arr[c]+arr[l]+arr[r]==sum){
+                        ans[0] = arr[c];
+                        ans[1] = arr[l];
+                        ans[2] = arr[r];
+                    }
+                    else if(arr[c]+arr[l]+arr[r]<sum){
+                        l++;
+                    }
+                    else if(arr[c]+arr[l]+arr[r]>sum)
+                        r--;
+                }
+            }
+            return ans;
+        }
+        public static void main(String[] args) {
+            int arr[] = {12,3,4,1,6,9};
+            int sol[] = new int[3];
+            int sum = 24;
+            sol = findtriplet_func(arr, sum);
+            System.out.println(sol);
+            methods.printarr(sol);
+        }
+    }
+
