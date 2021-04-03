@@ -45,5 +45,12 @@ public class methods {
         while(i<j)
             swap(arr,i++,j--);
     }
+    static int sumarr(int arr[]){
+        int sum = 0;
+        for(int c:arr){
+            sum+= c;
+        }
+        return sum;
+    }
 }
         

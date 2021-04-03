@@ -1,1 +1,27 @@
-1.learn the quick sort algo in java , c++
+html notes:
+1.image tags -> use src and alt for the source of the media and width for the resolution of the image 
+2.video tags -> (mp4,ogg,wmv) , mention the type of the video tag 
+        <video>
+        <source> </source>
+        </video>
+        for the controls option for the video , <video controls>
+in case of the audio tags everythings same just replace the video tag with the audio tag, and same scenario in case 
+the controls for the audio
+4.figure tag -> <figure> 
+    1.dragabble - > allows options to drag the image around the browser 
+contenteditable -> tags attribute 
+event attributes - > 
+click events => onclick , ondoubleclick 
+mouse events ->onmouseover , onmousemove , onmousedown
+load events=> onload , onunload 
+keyboard events -> onkeypress , onkeyup, onkeepdown 
+onchange, onfocus, onsubmit , onblur , onselect 
+
+
+
+css notes: 
+padding , margin =>
+selector - elemtent selector , id selector (#nameofid) , selecting by class 
+to aligh everything in the center - margin 0, auto
+context menu - 
+!important -> a specific event cannot be over rided from the style tag 
